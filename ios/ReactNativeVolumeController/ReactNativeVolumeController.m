@@ -31,6 +31,11 @@ RCT_EXPORT_VIEW_PROPERTY(thumbTintColor, UIColor);
 RCT_EXPORT_VIEW_PROPERTY(onValueChange, RCTBubblingEventBlock);
 RCT_EXPORT_VIEW_PROPERTY(thumbImage, UIImage);
 RCT_EXPORT_VIEW_PROPERTY(showsRouteButton, BOOL);
+
+RCT_EXPORT_VIEW_PROPERTY(volumeValue, float);
+
+
+
 RCT_CUSTOM_VIEW_PROPERTY(thumbSize, RCTthumbSize, VolumeSlider) {
     NSDictionary *thumbSize = (NSDictionary *) json;
     
@@ -39,6 +44,16 @@ RCT_CUSTOM_VIEW_PROPERTY(thumbSize, RCTthumbSize, VolumeSlider) {
     
     [view setThumb];
 }
+
+
+/**
+外部调用value 设置音量
+ */
+RCT_EXPORT_METHOD(change:(float)value){
+    volumeView.volumeValue = value;
+}
+
+
 
 
 

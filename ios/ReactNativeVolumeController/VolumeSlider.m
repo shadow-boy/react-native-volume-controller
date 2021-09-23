@@ -76,4 +76,10 @@
     }
 }
 
+
+- (void)setVolumeValue:(float)volumeValue{
+    _volumeValue =  volumeValue;
+    self.slider.value = volumeValue;
+}
+
 @end

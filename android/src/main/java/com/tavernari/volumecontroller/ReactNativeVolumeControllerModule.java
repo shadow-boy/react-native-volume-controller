@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
@@ -19,6 +18,8 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import android.media.AudioManager;
 import android.view.KeyEvent;
+
+import androidx.annotation.Nullable;
 
 public class ReactNativeVolumeControllerModule extends ReactContextBaseJavaModule {
 

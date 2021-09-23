@@ -17,6 +17,8 @@ typedef struct {
 @property (nonatomic, strong) UIImage *thumbImage;
 @property (nonatomic, assign) float thumbWidth;
 @property (nonatomic, assign) float thumbHeight;
+/** 设置音量大小*/
+@property (nonatomic, assign) float volumeValue;
 
 @property (nonatomic, strong) UIColor *thumbTintColor;
 @property (nonatomic, strong) UIColor *maximumTrackTintColor;
